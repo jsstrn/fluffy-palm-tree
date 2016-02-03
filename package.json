@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "watch": "watchify ./public/js/app.js -o ./public/js/bundle.js -t babelify",
+    "dev": "watchify ./public/js/app.js -o ./public/js/out.js -t babelify & nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
