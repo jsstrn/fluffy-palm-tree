@@ -5,7 +5,7 @@ const pdf = require('html-pdf')
 const html = fs.readFileSync('./public/index.html', 'utf8')
 const options = {
   format: 'A4',
-  orientation: "landscape"
+  orientation: 'landscape'
 }
 
 const express = require('express')
