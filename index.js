@@ -2,11 +2,6 @@
 
 const fs = require('fs')
 const pdf = require('html-pdf')
-const html = fs.readFileSync('./public/index.html', 'utf8')
-const options = {
-  format: 'A4',
-  orientation: 'landscape'
-}
 
 const express = require('express')
 const app = express()
@@ -18,8 +13,13 @@ app.get('/pdf', (req, res) => {
 })
 
 function html2pdf () {
+  const html = fs.readFileSync('./public/index.html', 'utf8')
+  const options = {
+    format: 'A4',
+    orientation: 'landscape'
+  }
   pdf.create(html, options)
-    .toFile('./public/students.pdf', (err, res) => {
+    .toFile('./public/pdf/students.pdf', (err, res) => {
       if (err) return console.log(err)
     })
 }
