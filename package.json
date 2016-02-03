@@ -10,8 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "html-pdf": "^1.5.0",
-    "passport": "^0.3.2",
-    "wkhtmltopdf": "^0.1.5"
+    "html-pdf": "^1.5.0"
   }
 }
