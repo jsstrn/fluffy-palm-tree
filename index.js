@@ -9,7 +9,7 @@ app.use(express.static('public'))
 
 app.get('/pdf', (req, res) => {
   html2pdf()
-  res.sendFile(__dirname + '/public/students.pdf')
+  res.sendFile(__dirname + '/public/data/students.pdf')
 })
 
 function html2pdf () {
@@ -19,7 +19,7 @@ function html2pdf () {
     orientation: 'landscape'
   }
   pdf.create(html, options)
-    .toFile('./public/pdf/students.pdf', (err, res) => {
+    .toFile('./public/data/students.pdf', (err, res) => {
       if (err) return console.log(err)
     })
 }
