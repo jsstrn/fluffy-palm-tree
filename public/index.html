@@ -4,81 +4,15 @@
     <meta charset="utf-8">
     <title>Hello</title>
     <link rel="stylesheet" href="/css/main.css" media="screen" charset="utf-8">
+    <script src="/js/bundle.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
       <h1>Class 3-10 (2016)</h1>
     </header>
+    <div class="button">
+      <a href="/pdf">Print</a>
+    </div>
     <div class="wrapper"></div>
-    <script type="text/javascript">
-    'use strict';
-    var students = {
-      '1-1': [
-        {
-          name: 'Joshua Tan',
-          img: '6'
-        },
-        {
-          name: 'Moses Lim',
-          img: '7'
-        },
-        {
-          name: 'Alfred Dunhill',
-          img: '9'
-        },
-        {
-          name: 'Samuel Toot',
-          img: '6'
-        },
-        {
-          name: 'Jacob Goldstein',
-          img: '7'
-        },
-        {
-          name: 'Princess Poops',
-          img: '9'
-        },
-        {
-          name: 'Joshua Waitzkin',
-          img: '6'
-        },
-        {
-          name: 'Moses Yogen',
-          img: '7'
-        },
-        {
-          name: 'Cranberry Juice',
-          img: '9'
-        },
-        {
-          name: 'Samuel Bobbie',
-          img: '6'
-        },
-        {
-          name: 'James Lim',
-          img: '7'
-        },
-        {
-          name: 'Penelope Frost',
-          img: '9'
-        }
-      ]
-    };
-    console.dir(typeof students);
-    var wrapper = document.querySelector('.wrapper');
-    students['1-1'].forEach(function (student, index) {
-      console.log(student);
-      var profile = document.createElement('div');
-      profile.className = 'profile';
-      var name = document.createElement('div');
-      name.className = 'name';
-      var img = document.createElement('img');
-      name.textContent = student.name + ' (' + (index + 1) + ')';
-      img.src = 'http://lorempixel.com/100/150/people/' + student.img;
-      profile.appendChild(name);
-      profile.appendChild(img);
-      wrapper.appendChild(profile);
-    });
-    </script>
   </body>
 </html>
