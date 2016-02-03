@@ -6,16 +6,22 @@ This app takes a CSV file of names and generates an HTML page. Click on the PDF 
 
 ## Instructions
 
-After downloading, run
+Install dependencies and developer dependencies:
 
 ```
 npm install
 ```
 
-Then, run
+To start the application:
 
 ```
-node index.js
+npm start
 ```
 
-Go to `http://localhost:3000`
+To run the application in development mode:
+
+```
+npm run dev
+```
+
+Now go to `http://localhost:3000`
