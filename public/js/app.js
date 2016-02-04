@@ -2,6 +2,7 @@ require('whatwg-fetch')
 
 function populateStudents (students) {
   const wrapper = document.querySelector('.wrapper')
+
   students['1-1'].forEach((student, index) => {
     let profile = document.createElement('div')
     profile.className = 'profile'
