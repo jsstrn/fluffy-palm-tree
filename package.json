@@ -1,5 +1,5 @@
 {
-  "name": "p4",
+  "name": "fluffy-palm-tree",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "html-pdf": "^1.5.0"
+    "html-pdf": "^1.5.0",
+    "phantomjs": "^2.1.3",
+    "whatwg-fetch": "^0.11.0"
   },
   "devDependencies": {
     "babelify": "^7.2.0",
