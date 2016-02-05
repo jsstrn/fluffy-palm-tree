@@ -404,7 +404,8 @@ function populateStudents(students) {
     name.className = 'name';
     var img = document.createElement('img');
     name.textContent = student.name + ' (' + (index + 1) + ')';
-    img.src = 'http://lorempixel.com/200/250/people/' + student.img;
+    // img.src = 'http://lorempixel.com/200/250/people/' + student.img
+    img.src = '/img/student.png';
     profile.appendChild(name);
     profile.appendChild(img);
     wrapper.appendChild(profile);
